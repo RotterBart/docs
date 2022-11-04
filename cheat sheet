@@ -1,0 +1,19 @@
+Commands for ngrok (
+./ngrok http example.com:9000 - запускает сервер и перенаправляет трафик
+./ngrok http 9000 - просто запуск сервера
+./ngrok http file:///var/log - доступ к локальным файлам
+./ngrok http https://localhost:8443 - перенаправляет на локальный сервер https
+)
+
+python commands(
+python -m http.server 4040 - запускает локальный сервер
+django:
+python manage.py runserver - запуск сервера django
+c:\django>django-admin startproject project_name - создание проекта
+python manage.py startapp app_name - создание приложения, прописать название в файле settings.py
+python -m venv .venv , .venv\Scripts\activate.bat - создаем и активируем виртуальную среду
+)
+
+Linux (
+
+)
