@@ -17,3 +17,9 @@ python -m venv .venv , .venv\Scripts\activate.bat - создаем и актив
 Linux (
 
 )
+
+git (
+git add . - фиксирует изменения
+git commit -m "comment" - производит коммит
+git push - отправляет на удаленный
+)
