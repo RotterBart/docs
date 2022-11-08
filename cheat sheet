@@ -7,7 +7,7 @@ Commands for ngrok (
 
 python commands(
 python -m http.server 4040 - запускает локальный сервер
-django:
+django: --  https://metanit.com/python/django/1.2.php
 python manage.py runserver - запуск сервера django
 c:\django>django-admin startproject project_name - создание проекта
 python manage.py startapp app_name - создание приложения, прописать название в файле settings.py
@@ -15,6 +15,12 @@ python -m venv .venv , .venv\Scripts\activate.bat - создаем и актив
 )
 
 Linux (
+ls - просмотр дерикторий
+ps, top, htop - диспетчеры задач
+cd - смена диретории
+сat - просмотр файлов
+awk '{action}' имя_файла.тхт - bash команда для просмотра текстов -- https://habr.com/ru/company/ruvds/blog/665084/
+nano, vim, vi - текстовые редакторы (vi/nano/vim имя_файла)
 
 )
 
