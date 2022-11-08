@@ -24,6 +24,11 @@ nano, vim, vi - текстовые редакторы (vi/nano/vim имя_фай
 
 )
 
+ssh (
+ssh remote_username@remote_host - подключение к удаленной машине
+
+)
+
 git (
 git add . - фиксирует изменения
 git commit -m "comment" - производит коммит
