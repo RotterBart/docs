@@ -30,7 +30,7 @@ sudo systemctl status ssh - проверка
 sudo ufw allow ssh - открыть порт
 /etc/ssh/sshd_config - путь файла конфигурации сервера
 ssh remote_username@remote_host - подключение к удаленной машине
-
+https://www.hanselman.com/blog/how-to-ssh-into-wsl2-on-windows-10-from-an-external-machine - инструкция по настройке ssh сервера на WSL
 )
 
 git (
