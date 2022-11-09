@@ -24,7 +24,11 @@ nano, vim, vi - текстовые редакторы (vi/nano/vim имя_фай
 
 )
 
-ssh (
+SSH (
+sudo apt-get install openssh-server - установка
+sudo systemctl status ssh - проверка
+sudo ufw allow ssh - открыть порт
+/etc/ssh/sshd_config - путь файла конфигурации сервера
 ssh remote_username@remote_host - подключение к удаленной машине
 
 )
