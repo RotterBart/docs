@@ -38,3 +38,8 @@ git add . - фиксирует изменения
 git commit -m "comment" - производит коммит
 git push - отправляет на удаленный
 )
+
+docker (
+docker build (docker-compose build) - сборка контейнера 
+docker up - запуск контейнера/ов
+)
