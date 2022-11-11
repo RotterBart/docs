@@ -43,3 +43,5 @@ docker (
 docker build (docker-compose build) - сборка контейнера 
 docker up - запуск контейнера/ов
 )
+
+Статья про PostgreSQL (https://metanit.com/sql/postgresql/1.1.php)
