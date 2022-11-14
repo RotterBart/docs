@@ -37,6 +37,7 @@ git (
 git add . - фиксирует изменения
 git commit -m "comment" - производит коммит
 git push - отправляет на удаленный
+git clone --bare repo_name repo_name.git - создание "голого" репозитория для отправки на сервер
 )
 
 docker (
