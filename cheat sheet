@@ -31,6 +31,9 @@ sudo ufw allow ssh - открыть порт
 /etc/ssh/sshd_config - путь файла конфигурации сервера
 ssh remote_username@remote_host - подключение к удаленной машине
 https://www.hanselman.com/blog/how-to-ssh-into-wsl2-on-windows-10-from-an-external-machine - инструкция по настройке ssh сервера на WSL
+
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=<ip adrr of WSL> connectport=2222 - настройка прокси для подключения к WSL по ssh
+netsh advfirewall firewall add rule name=”Open Port 2222 for WSL2” dir=in action=allow protocol=TCP localport=2222 - открываем firewall для входящих соединений
 )
 
 git (
