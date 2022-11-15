@@ -1,0 +1,11 @@
+FORMS (
+#Данная функция описывает получение данных (name/age) из формы ввода в index.html и вывод на странице по протоколу http
+def index(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        age = request.POST.get("age")
+        return HttpResponse(f"<h1>Привет, {name}, твой возраст: {age}</h1>")
+    else:
+        userform = Userform() #здесь переменная обращается к классу 
+        return render(request, "index.html", {"form": userform })
+)
