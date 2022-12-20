@@ -24,13 +24,13 @@ nano, vim, vi - текстовые редакторы (vi/nano/vim имя_фай
 )
 
 Bash/regex/administration (
-
-)
 Пример скрипта выбирает выражение и записывает в переменную
 #!/bin/bash #обозначение рабочей оболочки
 CAT=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.cat=).*(?=,)' test.txt) 
 SN=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.sn=).*(?=,)' test.txt)
 echo "$CAT$SN"
+
+https://onedev.net/post/409 #справочник
 
 GREP: [
 
