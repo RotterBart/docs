@@ -21,10 +21,26 @@ cd - смена диретории
 сat - просмотр файлов
 awk '{action}' имя_файла.тхт - bash команда для просмотра текстов -- https://habr.com/ru/company/ruvds/blog/665084/
 nano, vim, vi - текстовые редакторы (vi/nano/vim имя_файла)
+)
+
+Bash/regex/administration (
+
+)
+Пример скрипта выбирает выражение и записывает в переменную
+#!/bin/bash #обозначение рабочей оболочки
+CAT=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.cat=).*(?=,)' test.txt) 
+SN=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.sn=).*(?=,)' test.txt)
+echo "$CAT$SN"
+
+GREP: [
+
+]
 
 )
 
 SSH (
+ssh-keygen -t rsa/dsa/edsa/sha #генерация с вариантами шифрования
+~/.ssh/id_rsa.pub - путь к ключу
 sudo apt-get install openssh-server - установка
 sudo systemctl status ssh - проверка
 sudo ufw allow ssh - открыть порт
