@@ -24,8 +24,25 @@ nano, vim, vi - текстовые редакторы (vi/nano/vim имя_фай
 )
 
 Bash/regex/administration (
-Пример скрипта выбирает выражение и записывает в переменную
+Виды регекспов:
+-Базовые (Basic RE)
+-Расширенные (Extended RE)
+-Perl RE
+
+Пример скрипта который выбирает выражение и записывает в переменную
 #!/bin/bash #обозначение рабочей оболочки
+#файл из примера
+«
+assembly.cat=RF11SNSTFS,
+assembly.sn=0001,
+assembly.rev=01.02.0,
+assembly.bom=01,
+assembly.date=06.16,
+assembly.label=CLT00006,
+assembly.text=,
+assembly.R&amp;DRevision=,
+»
+
 CAT=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.cat=).*(?=,)' test.txt) 
 SN=$(grep --perl-regexp --max-count=1 --only-matching '(?<=assembly.sn=).*(?=,)' test.txt)
 echo "$CAT$SN"
@@ -33,6 +50,14 @@ echo "$CAT$SN"
 https://onedev.net/post/409 #справочник
 
 GREP: [
+
+(?<=) Позитивная ретроспективная проверка (positive lookbehind assertion) !Доступна только в PCRE режиме. Продолжает поиск только если слева от текущей позиции в тексте находится заключённое в скобки выражение
+
+(?=)  Положительная опережающая проверка (positive lookahead assertion). Продолжает поиск только если справа от текущей позиции в тексте находится заключённое в скобки выражение.
+
+(?<!) Негативная ретроспективная проверка (negative lookbehind assertion). Продолжает поиск только если слева от текущей позиции в тексте не находится заключённое в скобки выражение.
+
+(?!)  Негативная опережающая проверка (negative lookahead assertion). Продолжает поиск только если справа от текущей позиции в тексте не находится заключённое в скобки выражение.
 
 ]
 
